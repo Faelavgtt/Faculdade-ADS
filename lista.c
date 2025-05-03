@@ -6,7 +6,9 @@ int main()
 {
     // exercicio 1
 
-    char nome, endereco, sexo;
+    char nome [90];
+    char endereco[90];
+    char sexo[90];
     int telefone, idade;
 
     printf("Digite o seu nome: ");
@@ -24,7 +26,7 @@ int main()
     printf("Digite o seu telefone: ",telefone);
     scanf("%d",&telefone);
 
-    printf("Nome: %s\nIdade:%d\nSexo:%s\nEndereço:%s\nTelefone:%d",nome,idade,sexo,endereco,telefone);
+    printf("Nome:%s\nIdade:%d\nSexo:%s\nEndereço:%s\nTelefone:%d",nome,idade,sexo,endereco,telefone);
 
     return 0;
 }
