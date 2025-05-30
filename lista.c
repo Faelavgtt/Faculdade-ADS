@@ -530,8 +530,15 @@
 //     return 0;
 // }
 
-// exercicio 22
+// // exercicio 22
+// int main() {
 
-int main() {
-    
-}
+//     float precoProduto, desconto;
+
+//     printf("Digite o valor do produto: ");
+//     scanf("%f",&precoProduto);
+
+//     desconto = precoProduto - (precoProduto*0.10);
+//     printf("novo preço é: %.2f",desconto);
+
+// }
