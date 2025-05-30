@@ -359,3 +359,99 @@
 //     printf("menor: %d\n", menor);
 //     return 0;
 // }
+
+// exercicio 19
+// int main()
+// {
+//     float lado1, lado2, lado3;
+//     printf("Digite o primeiro lado: ");
+//     scanf("%f",&lado1);
+//     printf("Digite o segundo lado: ");
+//     scanf("%f",&lado2);
+//     printf("Digite o terceiro lado: ");
+//     scanf("%f",&lado3);
+
+//     if (lado1 == lado2 && lado2 == lado3 && lado1 == lado3){
+//         printf("o triangulo é equilátero");
+//     } else if (lado1 != lado2 && lado2 != lado3 && lado1 != lado3)
+//     {
+//         printf("o triangulo é escaleno");
+//     } else{
+//         printf("o triangulo é isósceles");
+//     }
+    
+//     return 0;
+// }
+
+// // exercicio 20
+// int main()
+// {
+//     int matricula, feminino = 0, masculino = 0, masculinoBom = 0, porcentagemMasculino;
+//     int status;
+//     int altura;
+//     char sexo;
+//     int alunos = 0;
+
+//     while (alunos < 3) 
+//     {
+//         printf("Digite a matrícula do aluno(a): ");
+//         scanf("%d", &matricula);
+
+//         printf("Digite a altura do aluno(a): ");
+//         scanf("%f", &altura);
+
+//         printf("Digite o status físico do aluno(a) (1-bom, 2-regular, 3-ruim): ");
+//         scanf("%d", &status);
+
+//         while (getchar() != '\n'); 
+
+//         printf("Digite o sexo do aluno(a) (M/F): ");
+//         scanf("%c", &sexo);
+
+//         if ((sexo == 'F' || sexo == 'f') && altura > 170)
+//         {
+//             feminino++;
+//         }
+
+//         if (sexo == 'M' || sexo == 'm')
+//         {
+//             masculino++;
+//             if (status == 1)
+//             {
+//                 masculinoBom++;
+//             }
+//         }
+
+//         alunos++;
+//     }
+//     printf("\nalunas com altura superior a 1.70m: %d\n", feminino);
+//     printf("alunos do sexo masculino com status 'bom': %d\n", masculinoBom);
+
+
+//     return 0;
+// }
+
+
+// exercicio 21
+int main()
+{
+    float salarioFixo, vendas, salarioFinal, comissao;
+
+    printf("Digite o valor do salário do funcionário: ");
+    scanf("%f",&salarioFixo);
+    	
+    printf("Digite o valor das vendas: ");
+    scanf("%f",&vendas);
+
+    comissao = vendas*0.04;
+    
+    salarioFinal = salarioFixo + comissao;
+
+    printf("o salário final é %f\ntotal de comissão %f",salarioFinal,comissao);
+    	
+
+
+    
+
+    return 0;
+}
