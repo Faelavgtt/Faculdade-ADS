@@ -162,7 +162,7 @@
 //     return 0;
 // }
 
-// exercicio 7
+// exercicio 8
 // int main()
 // {
 //    float km, litro,resultado;
@@ -360,6 +360,84 @@
 //     return 0;
 // }
 
+// exercicio 17
+// int main() {
+//     float salarioAtual, aumento, valorAumento, novoSalario;
+
+//     printf("Digite o salario atual do funcionário: ");
+//     scanf("%f", &salarioAtual);
+
+//     if (salarioAtual <= 280.00) {
+//         aumento = 0.20; 
+//     } else if (salarioAtual <= 700.00) {
+//         aumento = 0.15; 
+//     } else if (salarioAtual <= 1500.00) {
+//         aumento = 0.10; 
+//     } else {
+//         aumento = 0.05; 
+//     }
+    
+//     valorAumento = salarioAtual * aumento;
+//     novoSalario = salarioAtual + valorAumento;
+
+//     printf("\n--- Reajuste Salarial ---\n");
+//     printf("Salario antes do reajuste: R$ %.2f\n", salarioAtual);
+//     printf("Percentual de aumento aplicado: %.0f%%\n", aumento * 100);
+//     printf("Valor do aumento: R$ %.2f\n", valorAumento);
+//     printf("Novo salario, apos o aumento: R$ %.2f\n", novoSalario);
+
+//     return 0;
+// }
+
+// exercicio 18 (pedi ajuda pro GPT🙈)
+// int main() {
+//     float valorHora, horasTrabalhadas;
+//     float bruto, descontoIR = 0.0, descontoINSS, fgts, totalDesconto, salarioLiquido;
+
+//     printf("Digite o valor da hora de trabalho:  ");
+//     scanf("%f", &valorHora);
+//     printf("Digite a quantidade de horas trabalhadas no mes: ");
+//     scanf("%f", &horasTrabalhadas);
+
+//     bruto = valorHora * horasTrabalhadas;
+
+//     if (bruto <= 900.00) {
+//         descontoIR = 0.0;
+//     } else if (bruto <= 1500.00) {
+//         descontoIR = bruto * 0.05; 
+//     } else if (bruto <= 2500.00) {
+//         descontoIR = bruto * 0.10; 
+//     } else { 
+//         descontoIR = bruto * 0.20;
+//     }
+
+//     descontoINSS = bruto * 0.10;
+//     fgts = bruto * 0.11;
+//     totalDesconto = descontoIR + descontoINSS;
+//     salarioLiquido = bruto - totalDesconto;
+    
+//     printf("\n"); 
+//     printf("Salario Bruto: (%.0f * %.0f): R$ %.2f\n", valorHora, horasTrabalhadas, bruto);
+//     printf("(-) IR ");
+
+//     if (bruto <= 900.00) {
+//         printf("(Isento)");
+//     } else if (bruto <= 1500.00) {
+//         printf("(5%%)"); 
+//     } else if (bruto <= 2500.00) {
+//         printf("(10%%)");
+//     } else {
+//         printf("(20%%)");
+//     }
+//     printf(": R$ %.2f\n", descontoIR);
+//     printf("(-) INSS (10%%): R$ %.2f\n", descontoINSS);
+//     printf("FGTS (11%%): R$ %.2f\n", fgts);
+//     printf("Total de descontos: R$ %.2f\n", totalDesconto);
+//     printf("Salario Liquido: R$ %.2f\n", salarioLiquido);
+
+//     return 0;
+// }
+
 // exercicio 19
 // int main()
 // {
@@ -433,25 +511,27 @@
 
 
 // exercicio 21
-int main()
-{
-    float salarioFixo, vendas, salarioFinal, comissao;
+// int main()
+// {
+//     float salarioFixo, vendas, salarioFinal, comissao;
 
-    printf("Digite o valor do salário do funcionário: ");
-    scanf("%f",&salarioFixo);
+//     printf("Digite o valor do salário do funcionário: ");
+//     scanf("%f",&salarioFixo);
     	
-    printf("Digite o valor das vendas: ");
-    scanf("%f",&vendas);
+//     printf("Digite o valor das vendas: ");
+//     scanf("%f",&vendas);
 
-    comissao = vendas*0.04;
+//     comissao = vendas*0.04;
     
-    salarioFinal = salarioFixo + comissao;
+//     salarioFinal = salarioFixo + comissao;
 
-    printf("o salário final é %f\ntotal de comissão %f",salarioFinal,comissao);
-    	
+//     printf("o salário final é %f\ntotal de comissão %f",salarioFinal,comissao);  
 
+//     return 0;
+// }
 
+// exercicio 22
+
+int main() {
     
-
-    return 0;
 }
