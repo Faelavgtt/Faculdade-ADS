@@ -540,5 +540,280 @@
 
 //     desconto = precoProduto - (precoProduto*0.10);
 //     printf("novo preço é: %.2f",desconto);
+//     return 0;
+// }
+
+// exercicio 23
+// int main() {
+
+//     int frangos;
+//     float calculo;
+
+//     printf("Digite a quantidade de frangos: ");
+//     scanf("%d",&frangos);
+
+//     calculo = frangos*(4+7);
+
+//     printf("O calculo de todos os gasto é %f",calculo);
+//     return 0;
 
 // }
+
+// exercicio 24
+// int main() {
+
+//     int qntSanduiches;
+//     float queijo, presunto, carne;
+
+//     printf("Digite a quantidade de sanduiches: ");
+//     scanf("%d", &qntSanduiches);
+
+//     queijo = (qntSanduiches * 2 * 50) / 1000.0;
+//     presunto = (qntSanduiches * 50) / 1000.0;
+//     carne = (qntSanduiches * 100) / 1000.0;
+
+//     printf("Para %d sanduiches, será necessario:\n", qntSanduiches);
+//     printf("Queijo: %.2f kg\n", queijo);
+//     printf("Presunto: %.2f kg\n", presunto);
+//     printf("Carne: %.2f kg\n", carne);
+//     return 0;
+// }
+
+// exercicio 25
+// int main() {
+//     int p,m,g;
+//     float valor;
+
+//     printf("Digite a quantidade de Camisas p: ");
+//     scanf("%d", &p);
+//     printf("Digite a quantidade de Camisas m: ");
+//     scanf("%d", &m);
+//     printf("Digite a quantidade de Camisas g: ");
+//     scanf("%d", &g);
+
+//     p = p*10;
+//     m = m*12;
+//     g = g*15;
+
+//     valor = p+m+g;
+//     printf("o valor total é: R$%.2f", valor);
+//     return 0;
+// }
+// exercicio 26
+// int main() {
+//     float aquisicao, venda;
+
+//     printf("Digite o preço da aquisição: ");
+//     scanf("%f",&aquisicao);
+
+//     if(aquisicao<50.00){
+//         venda = aquisicao*1.45;
+//     }else
+//     {
+//         venda = aquisicao*1.30;
+
+//     }
+//     printf("O valor de venda do produto será: R$ %.2f\n", venda);
+//     return 0;
+// }
+// exercicio 27
+// int main() {
+//     int i, matricula, statusFisico, totalFeminino = 0;
+//     int totalMasculino = 0, maculinoBom = 0;
+//     char sexo;
+//     float altura;
+
+//     for (i = 0; i < 50; i++) {
+//         printf("Digite a matrícula, sexo (M/F), altura (cm) e status físico (1-bom, 2-regular, 3-ruim):\n");
+//         scanf("%d %c %f %d", &matricula, &sexo, &altura, &statusFisico);
+        
+//         if (sexo == 'F' && altura > 170) {
+//             totalFeminino++;
+//         }
+//         if (sexo == 'M') {
+//             totalMasculino++;
+//             if (statusFisico == 1) {
+//                 maculinoBom++;
+//             }
+//         }
+//     }
+
+//     float percentualBom = (totalMasculino > 0) ? ((maculinoBom * 100.0) / totalMasculino) : 0;
+
+//     printf("Quantidade de alunas com altura superior a 170cm: %d\n", totalFeminino);
+//     printf("Percentual de alunos do sexo masculino com status físico bom: %.2f%%\n", percentualBom);
+//     return 0;
+// }
+// exercicio 28
+// int main() {
+//     int num1, num2;
+//     float num3;
+
+//     printf("Digite dois números inteiros e um número real:\n");
+//     scanf("%d %d %f", &num1, &num2, &num3);
+
+//     float resultado1 = (2 * num1) * (num2 / 2.0);
+//     float resultado2 = (3 * num1) + num3;
+//     float resultado3 = num3 * num3 * num3;
+
+//     printf("O produto do dobro do primeiro com metade do segundo: %.2f\n", resultado1);
+//     printf("A soma do triplo do primeiro com o terceiro: %.2f\n", resultado2);
+//     printf("O terceiro elevado ao cubo: %.2f\n", resultado3);
+//     return 0;
+// }
+// exercicio 29
+// int main() {
+//     float altura, ideal;
+//     char sexo;
+    
+//     printf("Digite a altura e F ou M para o genero: \n");
+//     scanf("%f %c", &altura, &sexo);
+
+//     if (sexo == 'F' || sexo == 'f') {
+//         ideal = (62.1 * altura) - 44.7;
+//         printf("O peso ideal é: %.2f kg\n", ideal);
+//     } else if (sexo == 'M' || sexo == 'm') {
+//         ideal = (72.7 * altura) - 58;
+//         printf("O peso ideal é: %.2f kg\n", ideal);
+//     } else {
+//         printf("Entrada inválida! Digite a altura corretamente e 'F' ou 'M' para o gênero.\n");
+//     }
+    
+//     return 0;
+// }
+// exercicio 30
+// int main() {
+//     float pesoPeixe, calculo;
+
+//     printf("Digite o peso do peixe: Kg");
+//     scanf("%f",&pesoPeixe);
+
+//     if (pesoPeixe < 50)
+//     {
+//         printf("não paga multa");
+//     } else {
+//         calculo = (pesoPeixe-50)*4.00 ;
+//         printf("a multa é de R$%.2f",calculo);
+//     }
+    
+   
+//     return 0;
+// }
+// exercicio 31
+// int main() {
+//     char turno;
+
+//     printf("Digite M-matutino, V-vespertino ou N-noturno: ");
+//     scanf("%c",&turno);
+
+//     if (turno == 'm' || turno == 'M')
+//     {
+//         printf("Bom dia!");
+//     } else if (turno == 'v' || turno == 'V')
+//     {
+//         printf("Boa tarde!");
+//     } else if (turno == 'N' || turno == 'n')
+//     {
+//         printf("Boa noite!");
+//     }else{
+//         printf("Digite apenas N, V ou M");
+//     }
+    
+
+//     return 0;
+// }
+// exercicio 32
+// int main() {
+//     int saque, notas100, notas50, notas10, notas5, notas1;
+
+//     printf("Digite o valor do saque (mínimo R$10 e máximo R$600): ");
+//     scanf("%d", &saque);
+
+    
+//     if (saque < 10 || saque > 600) {
+//         printf("Valor inválido! O saque deve ser entre R$10 e R$600.\n");
+//         return 1; 
+//     }
+
+    
+//     notas100 = saque / 100;
+//     saque %= 100;
+    
+//     notas50 = saque / 50;
+//     saque %= 50;
+    
+//     notas10 = saque / 10;
+//     saque %= 10;
+    
+//     notas5 = saque / 5;
+//     saque %= 5;
+    
+//     notas1 = saque;
+    
+//     printf("Notas fornecidas:\n");
+//     if (notas100 > 0) printf("%d nota(s) de R$100\n", notas100);
+//     if (notas50 > 0) printf("%d nota(s) de R$50\n", notas50);
+//     if (notas10 > 0) printf("%d nota(s) de R$10\n", notas10);
+//     if (notas5 > 0) printf("%d nota(s) de R$5\n", notas5);
+//     if (notas1 > 0) printf("%d nota(s) de R$1\n", notas1);
+
+//     return 0;
+// }
+// exercicio 33
+// int main() {
+//     float num1, num2, resultado;
+//     int operacao;
+
+//     printf("Digite dois números: ");
+//     scanf("%f %f", &num1, &num2);
+
+//     printf("Escolha a operação:\n");
+//     printf("1 - Soma\n");
+//     printf("2 - Subtração\n");
+//     printf("3 - Multiplicação\n");
+//     printf("4 - Divisão\n");
+//     scanf("%d", &operacao);
+
+//     if (operacao == 1) {
+//         resultado = num1 + num2;
+//     } else if (operacao == 2) {
+//         resultado = num1 - num2;
+//     } else if (operacao == 3) {
+//         resultado = num1 * num2;
+//     } else if (operacao == 4) {
+//         if (num2 != 0) {
+//             resultado = num1 / num2;
+//         } else {
+//             printf("Erro: divisão por zero!\n");
+//             return 1;
+//         }
+//     } else {
+//         printf("Operação inválida!\n");
+//         return 1;
+//     }
+
+//     printf("Resultado: %.2f\n", resultado);
+
+//     if ((int)resultado % 2 == 0) {
+//         printf("O resultado é par.\n");
+//     } else {
+//         printf("O resultado é ímpar.\n");
+//     }
+
+//     if (resultado > 0) {
+//         printf("O resultado é positivo.\n");
+//     } else if (resultado < 0) {
+//         printf("O resultado é negativo.\n");
+//     } else {
+//         printf("O resultado é zero.\n");
+//     }
+
+//     if (resultado == (int)resultado) {
+//         printf("O resultado é inteiro.\n");
+//     } else {
+//         printf("O resultado é decimal.\n");
+//     }
+
+//     return 0;
+// }
+
