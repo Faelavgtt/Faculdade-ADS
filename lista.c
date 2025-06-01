@@ -816,4 +816,66 @@
 
 //     return 0;
 // }
+// exercicio 34
+// int main() {
+//      float litros, precoLitro, desconto, valorTotal;
+//     char tipoCombustivel;
+
+   
+//     printf("Digite o tipo de combustível (A-álcool, G-gasolina): ");
+//     scanf(" %c", &tipoCombustivel);
+//     printf("Digite a quantidade de litros vendidos: ");
+//     scanf("%f", &litros);
+
+    
+//     if (tipoCombustivel == 'A' || tipoCombustivel == 'a') {
+//         precoLitro = 1.90;
+//         desconto = (litros <= 20) ? 0.03 : 0.05;
+//     } else if (tipoCombustivel == 'G' || tipoCombustivel == 'g') {
+//         precoLitro = 2.50;
+//         desconto = (litros <= 20) ? 0.04 : 0.06;
+//     } else {
+//         printf("inválido! Use 'A' para álcool ou 'G' para gasolina.\n");
+//         return 1;
+//     }
+
+    
+//     valorTotal = litros * precoLitro * (1 - desconto);
+
+
+//     printf("Valor a ser pago: R$ %.2f\n", valorTotal);
+
+//     return 0;
+// }
+// exercicio 35
+// int main() {
+//      float litros, precoLitro, desconto, valorTotal;
+//     char tipoCombustivel;
+
+   
+//     printf("Digite o tipo de combustível (A-álcool, G-gasolina): ");
+//     scanf(" %c", &tipoCombustivel);
+//     printf("Digite a quantidade de litros vendidos: ");
+//     scanf("%f", &litros);
+
+    
+//     if (tipoCombustivel == 'A' || tipoCombustivel == 'a') {
+//         precoLitro = 1.90;
+//         desconto = (litros <= 20) ? 0.03 : 0.05;
+//     } else if (tipoCombustivel == 'G' || tipoCombustivel == 'g') {
+//         precoLitro = 2.50;
+//         desconto = (litros <= 20) ? 0.04 : 0.06;
+//     } else {
+//         printf("inválido! Use 'A' para álcool ou 'G' para gasolina.\n");
+//         return 1;
+//     }
+
+    
+//     valorTotal = litros * precoLitro * (1 - desconto);
+
+
+//     printf("Valor a ser pago: R$ %.2f\n", valorTotal);
+
+//     return 0;
+// }
 
