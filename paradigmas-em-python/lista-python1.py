@@ -83,4 +83,44 @@
 
 # print("o resultado é:", (base*altura)/2)
 
-# exercicio 8
+# # exercicio 8
+# distacia = float(input("Digite a distancia em Km: "))
+# consumo = float(input("Digite o consumo por km do veiculo: "))
+# combustivel = float(input("Digite o valor do combustivel: "))
+
+# calculo = (distacia/consumo)*combustivel
+
+# print("O custo total da viagem é: ", calculo)
+
+# exercicio 9
+
+nome = input("Digite o nome do aluno: ")
+disciplina = input("Digite o nome da disciplina: ")
+nota1 = float( input("Digite a nota 1: "))
+nota2 = float(input("Digite a nota 2: "))
+nota3 = float(input("Digite a nota 3: "))
+media = (nota1+nota2+nota3)/3
+
+
+if media >= 6:
+    print("-----------------------------")
+    print("Nome:",nome,
+      "\n--Notas--\n",
+      "prova 1:",nota1,
+      "\nprova 2:",nota2,
+      "\nprova 3:",nota3,
+      "\nMédia", media,
+      "\nAprovado"
+      )
+    
+else:
+    print("-----------------------------")
+    print("Nome:",nome,
+      "\n--Notas--\n",
+      "prova 1:",nota1,
+      "\nprova 2:",nota2,
+      "\nprova 3:",nota3,
+      "\nMédia", media,
+      "\nReprovado"
+      )
+
