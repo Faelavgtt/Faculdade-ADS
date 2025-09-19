@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(56, 56, 56);
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: none;
+    padding: 10px;
+
+}
+
+#nav > img{
+    width: 130px;
+}
+
+#navList{
+    list-style: none;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    color: white
+    ;
+}
+.container{
+    margin: 5%;
+    
+}
+#cardapio{
+    display: flex;
+    width: 600px;
+    gap: 10%;
+    
+}
