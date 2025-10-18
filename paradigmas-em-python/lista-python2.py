@@ -317,3 +317,5 @@
 
 # total = (pequenas * 10) + (medias * 12) + (grandes * 15)
 # print(f"Valor total da compra: R$ {total:.2f}")
+
+
